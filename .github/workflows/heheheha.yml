@@ -1,0 +1,23 @@
+name: heheheha
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  Trolling:
+    name: trolling
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+      - name: Use Node.js v16
+        uses: actions/setup-node@v3
+        with:
+          node-version: node
+      - name: Build code
+        run: echo heheheha
